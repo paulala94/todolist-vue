@@ -22,7 +22,6 @@ export default createStore({
   },
   actions: {
     addTodo({ commit }, todo) {
-      console.log('???')
       commit('addTodo', todo)
     },
     deleteTask({ commit }, index) {

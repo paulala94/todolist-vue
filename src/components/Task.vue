@@ -24,6 +24,7 @@ export default {
   name: "Task",
   props: {
     todo: Object,
+    index: Number,
   },
   computed: {
     ...mapState(["todos"]),

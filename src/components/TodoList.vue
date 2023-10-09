@@ -10,8 +10,8 @@
       <div @click="setFilter(false)" class="state-btn">Pendientes</div>
     </div>
 
-    <div class="task-list" v-for="todo in filteredTodos" :key="todo.id">
-      <Task :todo="todo" />
+    <div class="task-list" v-for="(todo, index) in filteredTodos" :key="index">
+      <Task :todo="todo" :index="index" />
       <hr />
     </div>
     <p class="completed-info">Tareas completadas: {{ completedTasks }}</p>
@@ -52,8 +52,8 @@ export default {
       this.addTodo({ text: this.newTodo, completed: false });
       this.newTodo = "";
     },
-    setFilter(completed) {
-      this.showCompletedTasks = completed;
+    setFilter(isCompleted) {
+      this.showCompletedTasks = isCompleted;
     },
   },
   data() {
@@ -68,13 +68,13 @@ export default {
 <style>
 h1 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 hr {
   background-color: #7b7b7b;
 }
 .container {
-  width: 50%;
+  width: 40%;
   margin: auto;
 }
 .todo-creator {
