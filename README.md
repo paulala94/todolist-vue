@@ -27,6 +27,4 @@ El proyecto se organiza en tres componentes principales:
 - Vuex
 - CSS
 
-
-# todolist-vue
 # todolist-vue
