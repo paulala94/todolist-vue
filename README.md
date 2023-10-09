@@ -27,4 +27,11 @@ El proyecto se organiza en tres componentes principales:
 - Vuex
 - CSS
 
+## Instrucciones de uso
+
+1. Clonar el repositorio.
+2. En la consola, escribir `npm i` para installar todos los paquetes.
+3. Escribir el comando `npm run serve` y se abrirá en localhost:8080
+
 # todolist-vue
+
